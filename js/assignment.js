@@ -10,20 +10,19 @@ let age;
 function checkAgeAndRespond() {
 
     age = parseInt(ageInputEl.value);
-    
+/*    console.log (age); */
     if (age >= 21) {
-        document.write("You can vote and purchase alcohol.");  
-    } else if (age >=18) {
-        document.write("You can vote and purchase alcohol.");  
+        console.log("You can vote and purchase alcohol.");  
+    } else if (age >= 18  && age < 21) {
+        console.log("You can vote, but you cannot purchase alcohol.");  
     } else {
-        document.write("You cannot vote and you cannot purchase alcohol.");  
+        console.log("You cannot vote and you cannot purchase alcohol.");  
     }
-};
+}
 
 
 
-submissionBtn.addEventListener("click", function)
-    {  checkAgeAndRespond(); };
+submissionBtn.addEventListener("click", checkAgeAndRespond); 
    
 
 function validateInput(event) {
@@ -31,6 +30,6 @@ function validateInput(event) {
     if (invalidCharacters.includes(event.key)) {
         event.preventDefault();
     }
-};
+}
 
 ageInputEl.addEventListener("keydown", validateInput);
