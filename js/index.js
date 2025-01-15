@@ -2,7 +2,7 @@
 // that are not declared
 "use strict"
 
-/* let healthPoints = -5;
+/* let healthPoints = 0
 
 if (healthPoints >= 10) {
     console.log("Hero is healthy.");
@@ -13,4 +13,4 @@ if (healthPoints >= 10) {
 } else {
     console.log("Sorry bud, your hero's dead, nice going Dr. Slugspeed!");
 }
-    */
+*/    
